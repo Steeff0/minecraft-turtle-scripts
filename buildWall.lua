@@ -5,7 +5,6 @@ while true do
 		turtle.forward()
 		
 		local slot = turtle.getSelectedSlot()
-		
 		if turtle.getItemCount(slot) < 1 then
 			turtle.select(slot+1)
 		end
@@ -15,6 +14,7 @@ while true do
 		end
 	end
 		
+	local slot = turtle.getSelectedSlot()
 	if turtle.getItemCount(slot) < 1 then
 		turtle.select(slot+1)
 	end
