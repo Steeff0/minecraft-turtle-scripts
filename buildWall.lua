@@ -6,13 +6,17 @@ while true do
 		
 		local slot = turtle.getSelectedSlot()
 		
-		if turtle.getItemCount(slot) < 2 then
+		if turtle.getItemCount(slot) < 1 then
 			turtle.select(slot+1)
 		end
 		
 		if not turtle.detectDown() then
 			turtle.placeDown()
 		end
+	end
+		
+	if turtle.getItemCount(slot) < 1 then
+		turtle.select(slot+1)
 	end
 	
 	turtle.up()
