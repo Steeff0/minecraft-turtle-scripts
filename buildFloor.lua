@@ -27,9 +27,9 @@ while true do
 		turtle.placeDown()
 		direction = 2
 	else
-		turtle.turnLeft()
+		turtle.turnRight()
 		turtle.forward()
-		turtle.turnLeft()
+		turtle.turnRight()
 		turtle.placeDown()
 		direction =1
 	end
